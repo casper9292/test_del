@@ -5,6 +5,7 @@
 
 html {
     max-width: 100%;
+    overflow-x: hidden;
 }
 body {
     /* background-color: #f5f5f5; */
@@ -17,12 +18,15 @@ body {
     /* margin-top: 5%; */
     height: 10000px;
     transition: background-color 2s ease;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .black { background: black }
 .red {  background:rgba(195, 2, 2, 0.822) }
-.yellow { background:rgba(252, 252, 241, 0.794)}
-
+/* .yellow { background:rgba(252, 252, 241, 0.794)} */
+.yellow { background:rgba(97, 173, 243, 0.945)}
+.whitebg { background:rgba(252, 252, 241, 0.904)}
 
 
 .newsubject {
@@ -304,6 +308,24 @@ img.shadowed {
     height: 44rem;
 }
 
+
+.gender_age_deivision_plot {
+    width: 100%;
+    height: 45rem;
+    margin-left: 30%;
+}
+
+.genderright {
+    float: right;
+    width: 70%;
+    height: 45rem;
+}
+
+.genderleft {
+    float: left;
+    width: 28%;
+    height: 45rem;
+}
 
 .handwritten {
     align-self:center;
