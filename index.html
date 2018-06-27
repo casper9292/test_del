@@ -172,26 +172,57 @@
                 </div>
 
                 <div id="secondcontainer">
-                        <div class='left'>
-                            <h1 class='blacktext'>Why would you shoot...</h3>
-                            <p class='blacktext'> ..at what age?</p>
-                            <div id=hideshow class="box slideleft plotbox">
-                                    <img src="scripts/plots/plot_type_age.png" alt="radar chart age" style='width: 100%'>
-                            </div>
+                    <div class='left'>
+                        <h1 class='blacktext'>Why would you shoot...</h3>
+                        <p class='blacktext'> ..at what age?</p>
+                        <div id=hideshow class="box slideleft plotbox">
+                                <img src="scripts/plots/plot_type_age.png" alt="radar chart age" style='width: 100%'>
                         </div>
-                        <div class='right'>
-                            <div class='buttoncontainer'>
-                                    
-                                    <button class='btn' id="toggle6"> this is a nice graph </button>
-                                    <div id=showhide6>
-                                            <p class='blacktext'> It is a radar chart. Want to know something exciting? </p>
-                                            <p class='blacktext'> there is barely a difference between men and women: </p>
-                                            <img src="scripts/plots/plot_type_age.png" alt="radar chart age" style='width: 60%'>
-                                    </div>
-                                    <!-- <embed class='plotcontain' src="plots/plot_barchart_years2.html"> -->
-                            </div>
+                    </div>
+                    <div class='right'>
+                        <div class='buttoncontainer'>
                                 
+                                <button class='btn' id="toggle6"> this is a nice graph </button>
+                                <div id=showhide6>
+                                        <p class='blacktext'> It is a radar chart. Want to know something exciting? </p>
+                                        <p class='blacktext'> there is barely a difference between men and women: </p>
+                                        <img src="scripts/plots/plot_type_age.png" alt="radar chart age" style='width: 60%'>
+                                </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='newsubject blacktext'> 4. THE PROBLEMATIC AGE: ADOLESCENCE </div>
+            <div class='container' style='margin-top: 0'>
+
+                <div id="thirdcontainer" >
+                    <div class='genderleft'>
+                        <div class='buttoncontainer' style='height: 45rem !important'>
+                                <button class='btn' style='margin-top: 5rem' id="toggle7"> Having a daughter is also not the safest option </button>
+                                <div id=showhide7>
+                                        <p class='blacktext'> Women are  more likely to be a victim </p>
+                                        <embed class='plot' src="scripts/plots/plot_barchart_male_female_verhouding.html" style='height: 120%'>
+                                </div>
+                        </div>
+    
+                    </div>
+                    <div class='genderright'>
+                        <h3 style='margin-left: 30%'> Hitting puberty </h3>
+                        <h1 style='margin-left: 30%'>Not your safest time</h1>
+                        <div >   
+                            <!-- <div id='gender_age_deivision_container' style='border: 1px solid blue'> -->
+                                <embed class='gender_age_deivision_plot' src="scripts/plots/plot_gender_age_division_type.html">
+                            <!-- </div> -->
+                        </div> 
+                    </div>
+        
+                </div>
+
+
+
+            </div>
+
 
         <!-- slide in -->
         <div class="box slideright"></div>
@@ -315,11 +346,14 @@
                 var scroll_pos = 0;
                 $(document).scroll(function() { 
                     scroll_pos = $(this).scrollTop();
-                    if(scroll_pos > 3000 && scroll_pos < 6000) {
+                    if(scroll_pos > 3000 && scroll_pos < 5500) {
                         $("body").removeClass().addClass('red');
                     } 
-                    if(scroll_pos > 6000 && scroll_pos < 9000) {
+                    else if(scroll_pos > 5500 && scroll_pos < 7500) {
                         $("body").removeClass().addClass('yellow');
+                    } 
+                    else if(scroll_pos > 7500 && scroll_pos < 12000) {
+                        $("body").removeClass().addClass('whitebg');
                     } 
                     else if(scroll_pos < 3000) {
                         $("body").removeClass('red').addClass('black');
