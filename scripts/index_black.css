@@ -21,6 +21,8 @@ body {
 
 .black { background: black }
 .red {  background:rgba(195, 2, 2, 0.822) }
+.yellow { background:rgba(252, 252, 241, 0.794)}
+
 
 
 .newsubject {
@@ -41,6 +43,15 @@ body {
 
 .title {
     height: 34rem;
+}
+
+/* make text white for red background */
+.white {
+    color: white;
+}
+
+.blacktext {
+    color: rgb(0, 0, 0);
 }
 
 .fly-in-text {
@@ -255,19 +266,42 @@ img.shadowed {
     height: 30rem;
 }
 
+#showhide3, #showhide4, #showhide5, #showhide6, #showhide7  {
+    display: none;
+    height: 30rem;
+}
+
 .buttoncontainer {
     text-align: center;
 }
 
 
 #thirdcontainer {
-    margin-top: 20rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
     /* align-items: center; */
     align-items: right;
     text-align: right;
     margin-right: none;
     /* padding-left: 30%; */
+}
+
+
+#map_police_container {
+    height: 30rem;
+    width: 50rem;
+}
+
+.leftpolice {
+    float: left;
+    width: 20%;
+    height: 44rem;
+}
+
+.rightpolice {
+    float: right;
+    width: 78%;
+    height: 44rem;
 }
 
 
@@ -355,4 +389,14 @@ img.shadowed {
   }
 button:hover {
     cursor: pointer;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a {
+    all: unset;
 }
