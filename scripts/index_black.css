@@ -71,7 +71,7 @@ body {
     margin-right: 10px;
     font-family: Open Sans, Arial;
     font-weight: 300;
-    font-size: 4em;
+    font-size: 300%;
     color: #fff;
     opacity: 1;
     transition: all 2.5s ease;
@@ -156,6 +156,21 @@ h3 {
     opacity: 0.6;
   }
 
+
+/* 
+#myHeader2 {
+    transform: translate3d(0px, 0px, 0px);
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+} */
+/* #myHeader2:hover { 
+    opacity: 0.1;
+} */
+
+
+
+
+
 .visiblegun {
     transition-timing-function: ease-in-out;
     transition-duration: 1s;
@@ -164,6 +179,11 @@ h3 {
 
 .visiblegun_afterscroll {
     transform: translateX(25rem);
+}
+
+/* gun weg als mouse over */
+.visiblegun_afterscroll:hover {
+    opacity: 0.1 !important;
 }
 
 .invisible {
@@ -202,6 +222,12 @@ img.shadowed {
 .container {
     /* border: 1px solid red; */
     margin: 30% 5% 10% 5%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        margin: 30% 1% 10% 1%;
+    }
 }
 
 #firstcontainer {
@@ -270,7 +296,7 @@ img.shadowed {
     height: 30rem;
 }
 
-#showhide3, #showhide4, #showhide5, #showhide6, #showhide7  {
+#showhide3, #showhide4, #showhide5, #showhide6, #showhide7, #showhide8 , #showhide9 , #showhide10   {
     display: none;
     height: 30rem;
 }
@@ -352,7 +378,6 @@ img.shadowed {
 
 /* shit voor slide in: */
 .box{
-
     transition: 1.5s;
 }
 
@@ -370,10 +395,7 @@ img.shadowed {
 }
 .slideright.triggeredCSS3 {
     transform : translate3d(25rem,0,0); 
-    margin: none !important;
-    /* padding-right: 10%;
-    width: 40%;
-    margin: 10% */
+    margin: 0 !important;
     }
 .slideleft.triggeredCSS3 {
     transform : translate3d(-25rem, 0, 0); 
